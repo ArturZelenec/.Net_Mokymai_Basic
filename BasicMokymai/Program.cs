@@ -45,38 +45,7 @@
 
             //Console.WriteLine("{ 0:d }");
 
-
-            Console.WriteLine("Hi Artur");
-            Console.WriteLine("Iveskite savo varda, as pakartosiu");
-            Console.WriteLine($"Jusu vardas {Console.ReadLine()}");
-            Console.WriteLine("Iveskite savo varda, parodisu pirmos raides ASCII");
-            Console.WriteLine($"stai mano pirmos raides ASCII {(int)Console.ReadLine()[0]}");
-            Console.WriteLine("Iveskite varda paspauskit enter o poto iveskite skaiciu ir paspaskit enter kad suskaiciotu suma");
-            Console.WriteLine($"Suma {(int)Console.ReadLine()[0] + Convert.ToInt32(Console.ReadLine())}");
-            Console.ReadLine();
-            Console.WriteLine("\t\t\tMeniu");
-            Console.WriteLine("(1) Pirkti\n(2) Parduoti\n(3) Likuciai");
-            Console.WriteLine("Iveskite skaiciu kad iskvesti meniu punkta");
-            var input = Console.ReadLine();
-            switch (input)
-            {
-                case "1":
-                    Console.WriteLine("Pirkti");
-                    break;
-                case "2":
-                    Console.WriteLine("Parduoti");
-                    break;
-                case "3":
-                    Console.WriteLine("Likuciai");
-                    break;
-
-
-            }
-
-
-
-
-
+            
         }
     }
 }
