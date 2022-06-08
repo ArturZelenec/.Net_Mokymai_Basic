@@ -5,13 +5,17 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicMokymai", "BasicMokymai\BasicMokymai.csproj", "{4CF6BF3B-CE53-4632-8091-BAB2D21B811F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Komentarai", "Komentarai\Komentarai.csproj", "{9FFE7E00-7038-4103-9706-E8F2D34D9DF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Komentarai", "Komentarai\Komentarai.csproj", "{9FFE7E00-7038-4103-9706-E8F2D34D9DF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUzduotis_1", "ConsoleUzduotis_1\ConsoleUzduotis_1.csproj", "{9CFB5486-7F2D-4E9C-A6FB-06377F890EDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUzduotis_1", "ConsoleUzduotis_1\ConsoleUzduotis_1.csproj", "{9CFB5486-7F2D-4E9C-A6FB-06377F890EDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String_Kintamieji", "String_Kintamieji\String_Kintamieji.csproj", "{8D15583E-900E-4276-833F-699BAD16FB98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String_Kintamieji", "String_Kintamieji\String_Kintamieji.csproj", "{8D15583E-900E-4276-833F-699BAD16FB98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavarankiskasDarbas_TowerOfHanoi", "SavarankiskasDarbas_TowerOfHanoi\SavarankiskasDarbas_TowerOfHanoi.csproj", "{A6E8D38C-70E6-473A-BC5C-15BD66C2A7FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SavarankiskasDarbas_TowerOfHanoi", "SavarankiskasDarbas_TowerOfHanoi\SavarankiskasDarbas_TowerOfHanoi.csproj", "{A6E8D38C-70E6-473A-BC5C-15BD66C2A7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kintamieji", "Kintamieji\Kintamieji.csproj", "{9DD9B156-C48F-48AE-AF69-6E2E2175D072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kintamieji_Uzdaviniai", "Kintamieji_Uzdaviniai\Kintamieji_Uzdaviniai.csproj", "{9CF7C271-2227-4679-9F8B-E597F24A5919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{A6E8D38C-70E6-473A-BC5C-15BD66C2A7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6E8D38C-70E6-473A-BC5C-15BD66C2A7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6E8D38C-70E6-473A-BC5C-15BD66C2A7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD9B156-C48F-48AE-AF69-6E2E2175D072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD9B156-C48F-48AE-AF69-6E2E2175D072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD9B156-C48F-48AE-AF69-6E2E2175D072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD9B156-C48F-48AE-AF69-6E2E2175D072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF7C271-2227-4679-9F8B-E597F24A5919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF7C271-2227-4679-9F8B-E597F24A5919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF7C271-2227-4679-9F8B-E597F24A5919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF7C271-2227-4679-9F8B-E597F24A5919}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
