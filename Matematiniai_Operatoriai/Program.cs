@@ -68,6 +68,12 @@ double double10 = 10;
 //Console.WriteLine(long10/nulis);//luzta
 Console.WriteLine(double10/nulis); // begalybes implementacija
 
+//Overflow and Underflow
+short s1 = 30_000;
+short s2 = 30_000;
+short s3 = (short)(s1 + s2);
+Console.WriteLine($"s3={s3}");
+
 
 
 

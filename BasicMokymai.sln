@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipu_Konversijos", "Tipu_Ko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matematiniai_Operatoriai", "Matematiniai_Operatoriai\Matematiniai_Operatoriai.csproj", "{B63214D2-51CB-4E48-A8C3-249D5DA25C96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matimatiniai_Operatoriai_Uzdaviniai", "Matimatiniai_Operatoriai_Uzdaviniai\Matimatiniai_Operatoriai_Uzdaviniai.csproj", "{AE2AFD54-596E-4525-A91D-CFE69F20F282}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B63214D2-51CB-4E48-A8C3-249D5DA25C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B63214D2-51CB-4E48-A8C3-249D5DA25C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B63214D2-51CB-4E48-A8C3-249D5DA25C96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2AFD54-596E-4525-A91D-CFE69F20F282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2AFD54-596E-4525-A91D-CFE69F20F282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2AFD54-596E-4525-A91D-CFE69F20F282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2AFD54-596E-4525-A91D-CFE69F20F282}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
