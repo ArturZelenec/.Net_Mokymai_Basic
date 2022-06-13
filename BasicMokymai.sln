@@ -13,9 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String_Kintamieji", "String
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SavarankiskasDarbas_TowerOfHanoi", "SavarankiskasDarbas_TowerOfHanoi\SavarankiskasDarbas_TowerOfHanoi.csproj", "{A6E8D38C-70E6-473A-BC5C-15BD66C2A7FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kintamieji", "Kintamieji\Kintamieji.csproj", "{9DD9B156-C48F-48AE-AF69-6E2E2175D072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kintamieji", "Kintamieji\Kintamieji.csproj", "{9DD9B156-C48F-48AE-AF69-6E2E2175D072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kintamieji_Uzdaviniai", "Kintamieji_Uzdaviniai\Kintamieji_Uzdaviniai.csproj", "{9CF7C271-2227-4679-9F8B-E597F24A5919}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kintamieji_Uzdaviniai", "Kintamieji_Uzdaviniai\Kintamieji_Uzdaviniai.csproj", "{9CF7C271-2227-4679-9F8B-E597F24A5919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tipu_Konversijos", "Tipu_Konversijos\Tipu_Konversijos.csproj", "{D334AD06-AB35-4E1D-8A80-980AB6E7F0A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matematiniai_Operatoriai", "Matematiniai_Operatoriai\Matematiniai_Operatoriai.csproj", "{B63214D2-51CB-4E48-A8C3-249D5DA25C96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{9CF7C271-2227-4679-9F8B-E597F24A5919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF7C271-2227-4679-9F8B-E597F24A5919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF7C271-2227-4679-9F8B-E597F24A5919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D334AD06-AB35-4E1D-8A80-980AB6E7F0A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D334AD06-AB35-4E1D-8A80-980AB6E7F0A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D334AD06-AB35-4E1D-8A80-980AB6E7F0A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D334AD06-AB35-4E1D-8A80-980AB6E7F0A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B63214D2-51CB-4E48-A8C3-249D5DA25C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63214D2-51CB-4E48-A8C3-249D5DA25C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63214D2-51CB-4E48-A8C3-249D5DA25C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63214D2-51CB-4E48-A8C3-249D5DA25C96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -30,6 +30,7 @@
             Console.WriteLine("{0} {1} {2}", num1, num2, num3);
             Console.WriteLine($"{num1} {num2} {num3}");
             Console.WriteLine(num1 + " " + num2 + " " + num3);
+
         }
     }
 }
