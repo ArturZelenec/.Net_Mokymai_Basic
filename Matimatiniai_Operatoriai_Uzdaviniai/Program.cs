@@ -30,4 +30,11 @@ sukurkite naują kintamajį short ir prskirkite didžiausią reikšmę
 
 long longSkaicius = long.MaxValue;
 short shortSkaicius = short.MaxValue;
-Console.WriteLine($"{(longSkaicius/shortSkaicius) - longSkaicius + int.MaxValue}");
+var dalyba = longSkaicius / shortSkaicius;
+Console.WriteLine($"dalyba = longSkaicius/shortSkaicius = {longSkaicius/shortSkaicius}");
+var skirtumas = dalyba - longSkaicius;
+Console.WriteLine($"skirtumas = dalyba - longSkaicius = {skirtumas}");
+var suma = skirtumas + int.MaxValue;
+Console.WriteLine($"suma = skirtumas + intMaxValue = {suma}");
+
+Console.WriteLine($"rezultatas = {(longSkaicius/shortSkaicius) - longSkaicius + int.MaxValue}");
