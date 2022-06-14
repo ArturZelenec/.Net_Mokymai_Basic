@@ -14,6 +14,8 @@ Console.WriteLine($"Patikra ar sutampa kelvin su fahrenheit = {kelvin == fahrenh
 
 Console.WriteLine("_________________");
 Console.WriteLine("  ^F          ^C  ");
+Console.WriteLine($"| {fahrenheit + 72}  | |    {celsius + 40} |");
+Console.WriteLine($"| {fahrenheit + 63}  | |    {celsius + 35} |");
 Console.WriteLine($"| {fahrenheit + 54}  | |    {celsius + 30} |");
 Console.WriteLine($"| {fahrenheit + 45}   | |    {celsius + 25} |");
 Console.WriteLine($"| {fahrenheit + 36}   | |    {celsius + 20} |");
@@ -29,7 +31,7 @@ Console.WriteLine($"| {fahrenheit - 45}    |X|   {celsius - 25} |");
 Console.WriteLine($"| {fahrenheit - 54}   |X|   {celsius - 30} |");
 Console.WriteLine($"| {fahrenheit - 63}  |X|   {celsius - 35} |");
 Console.WriteLine($"| {fahrenheit - 72}  |X|   {celsius - 40} |");
-Console.WriteLine($"| {fahrenheit - 81}  |X|   {celsius - 45} |");
-Console.WriteLine($"| {fahrenheit - 90}  |X|   {celsius - 50} |");
 Console.WriteLine("|________________|");
+
+
 

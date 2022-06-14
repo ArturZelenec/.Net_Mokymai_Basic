@@ -53,6 +53,17 @@ sukurkite naują kintamajį short ir prskirkite didžiausią reikšmę
 //VIENOJE EILUTĖJE IŠVESKITE ŠĮ SKAIČIŲ 5 KARTUS VIS PADIDINAMI VIENETU.
 //PVZ BUVO ĮVESTA 5
 //REZULTATAS 6 7 8 9 10
-var sk1 = Convert.ToDouble(Console.ReadLine());
+//var sk1 = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine($"rezultatas {++sk1} {++sk1} {++sk1} {++sk1} {++sk1}");
+//Console.WriteLine($"rezultatas {++sk1} {++sk1} {++sk1} {++sk1} {++sk1}"); //s++ isveda i console pradzias [s] o po to pliusoja vieneta; ++s isveda [s] jau supliusota
+
+//ivesti atstumas metrais ir laikas sekundemis
+//isveda greiti km/h
+//isveda greiti km/s
+Console.WriteLine("iveskite atstuma metrais, laika sekundemis");
+var atstumas = Convert.ToDouble(Console.ReadLine());
+var laikas = Convert.ToDouble(Console.ReadLine());
+var greitisKmHour = (atstumas / 1000) / (laikas / 3600);
+Console.WriteLine($"km/h {greitisKmHour}");
+var greitisKmSecunde = (atstumas / 1000) / laikas;
+Console.WriteLine($"km/s {greitisKmSecunde}");
