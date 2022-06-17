@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matematiniai_Operatoriai", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matimatiniai_Operatoriai_Uzdaviniai", "Matimatiniai_Operatoriai_Uzdaviniai\Matimatiniai_Operatoriai_Uzdaviniai.csproj", "{AE2AFD54-596E-4525-A91D-CFE69F20F282}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savarankiskas_Darbas_Termometras_Atstumas", "Savarankiskas_Darbas_Termometras_Atstumas\Savarankiskas_Darbas_Termometras_Atstumas.csproj", "{98263B75-A0A7-486A-B2A3-250228AD2D1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Savarankiskas_Darbas_Termometras_Atstumas", "Savarankiskas_Darbas_Termometras_Atstumas\Savarankiskas_Darbas_Termometras_Atstumas.csproj", "{98263B75-A0A7-486A-B2A3-250228AD2D1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loginiai_operatoriai", "Loginiai_operatoriai\Loginiai_operatoriai.csproj", "{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{98263B75-A0A7-486A-B2A3-250228AD2D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98263B75-A0A7-486A-B2A3-250228AD2D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98263B75-A0A7-486A-B2A3-250228AD2D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
