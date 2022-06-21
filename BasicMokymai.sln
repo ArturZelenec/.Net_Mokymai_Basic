@@ -25,7 +25,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matimatiniai_Operatoriai_Uz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Savarankiskas_Darbas_Termometras_Atstumas", "Savarankiskas_Darbas_Termometras_Atstumas\Savarankiskas_Darbas_Termometras_Atstumas.csproj", "{98263B75-A0A7-486A-B2A3-250228AD2D1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loginiai_operatoriai", "Loginiai_operatoriai\Loginiai_operatoriai.csproj", "{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loginiai_operatoriai", "Loginiai_operatoriai\Loginiai_operatoriai.csproj", "{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "If_else", "If_else\If_else.csproj", "{7872EF73-05B7-4A79-9C76-E5E25242FA0E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "if_Uzdaviania", "if_Uzdaviania\if_Uzdaviania.csproj", "{DDEAE3EF-0E0F-4C22-BFC3-3A9875ACB039}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch_Teorija", "Switch_Teorija\Switch_Teorija.csproj", "{DB0A7C0A-D90B-4194-AB6A-50EA8C136B7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "If_Switch_Uzdaviniai", "If_Switch_Uzdaviniai\If_Switch_Uzdaviniai.csproj", "{233C3777-406C-4E75-8459-A0B473AA724D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +89,22 @@ Global
 		{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76EA1266-701C-4B3B-A144-F5FD83CCE4DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7872EF73-05B7-4A79-9C76-E5E25242FA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7872EF73-05B7-4A79-9C76-E5E25242FA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7872EF73-05B7-4A79-9C76-E5E25242FA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7872EF73-05B7-4A79-9C76-E5E25242FA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEAE3EF-0E0F-4C22-BFC3-3A9875ACB039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEAE3EF-0E0F-4C22-BFC3-3A9875ACB039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEAE3EF-0E0F-4C22-BFC3-3A9875ACB039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEAE3EF-0E0F-4C22-BFC3-3A9875ACB039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB0A7C0A-D90B-4194-AB6A-50EA8C136B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB0A7C0A-D90B-4194-AB6A-50EA8C136B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB0A7C0A-D90B-4194-AB6A-50EA8C136B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB0A7C0A-D90B-4194-AB6A-50EA8C136B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{233C3777-406C-4E75-8459-A0B473AA724D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{233C3777-406C-4E75-8459-A0B473AA724D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{233C3777-406C-4E75-8459-A0B473AA724D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{233C3777-406C-4E75-8459-A0B473AA724D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
