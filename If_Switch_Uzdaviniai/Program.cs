@@ -271,49 +271,82 @@
             //-Surasti ir atspausdinti vyriausią draugą(vardą ir amžių).
             //< Hint > ieškant jauniausio, seniausio naudoti if sąlygos sakinius ir naudoti tik elementus ir
             //konstrukcijas kurias iki šiol išėjome.
-            Console.WriteLine("iveskite varda");
-            var vardas1 = Console.ReadLine();
-            Console.WriteLine("iveskite amziu");
-            int amzius1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("iveskite varda");
-            var vardas2 = Console.ReadLine();
-            Console.WriteLine("iveskite amziu");
-            int amzius2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("iveskite varda");
-            var vardas3 = Console.ReadLine();
-            Console.WriteLine("iveskite amziu");
-            int amzius3 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"vardas {vardas1}: Amzius {amzius1}");
-            Console.WriteLine($"vardas {vardas2}: Amzius {amzius2}");
-            Console.WriteLine($"vardas {vardas3}: Amzius {amzius3}");
-            Console.WriteLine($"amziu vidurkis = {(amzius1+amzius2+amzius3)/3}");
-            if (amzius1<amzius2&&amzius1<amzius3)
-            {
-                Console.WriteLine($" jauniausis {amzius1} vardas {vardas1}");
-            }
-            else if (amzius2 < amzius1 && amzius2 < amzius3)
-            {
-                Console.WriteLine($" jauniausis {amzius2} vardas {vardas2}");
-            }
-            else if (amzius3 < amzius1 && amzius3 < amzius2)
-            {
-                Console.WriteLine($" jauniausis {amzius3} vardas {vardas3}");
-            }
+            //Console.WriteLine("iveskite varda");
+            //var vardas1 = Console.ReadLine();
+            //Console.WriteLine("iveskite amziu");
+            //int amzius1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("iveskite varda");
+            //var vardas2 = Console.ReadLine();
+            //Console.WriteLine("iveskite amziu");
+            //int amzius2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("iveskite varda");
+            //var vardas3 = Console.ReadLine();
+            //Console.WriteLine("iveskite amziu");
+            //int amzius3 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($"vardas {vardas1}: Amzius {amzius1}");
+            //Console.WriteLine($"vardas {vardas2}: Amzius {amzius2}");
+            //Console.WriteLine($"vardas {vardas3}: Amzius {amzius3}");
+            //Console.WriteLine($"amziu vidurkis = {(amzius1+amzius2+amzius3)/3}");
+            //if (amzius1<amzius2&&amzius1<amzius3)
+            //{
+            //    Console.WriteLine($" jauniausis {amzius1} vardas {vardas1}");
+            //}
+            //else if (amzius2 < amzius1 && amzius2 < amzius3)
+            //{
+            //    Console.WriteLine($" jauniausis {amzius2} vardas {vardas2}");
+            //}
+            //else if (amzius3 < amzius1 && amzius3 < amzius2)
+            //{
+            //    Console.WriteLine($" jauniausis {amzius3} vardas {vardas3}");
+            //}
 
-            if (amzius1 > amzius2 && amzius1 > amzius3)
-            {
-                Console.WriteLine($" viresnis {amzius1} vardas {vardas1}");
-            }
-            else if (amzius2 > amzius1 && amzius2 > amzius3)
-            {
-                Console.WriteLine($" viresnis {amzius2} vardas {vardas2}");
-            }
-            else if (amzius3 > amzius1 && amzius3 > amzius2)
-            {
-                Console.WriteLine($" viresnis {amzius3} vardas {vardas3}");
-            }
+            //if (amzius1 > amzius2 && amzius1 > amzius3)
+            //{
+            //    Console.WriteLine($" viresnis {amzius1} vardas {vardas1}");
+            //}
+            //else if (amzius2 > amzius1 && amzius2 > amzius3)
+            //{
+            //    Console.WriteLine($" viresnis {amzius2} vardas {vardas2}");
+            //}
+            //else if (amzius3 > amzius1 && amzius3 > amzius2)
+            //{
+            //    Console.WriteLine($" viresnis {amzius3} vardas {vardas3}");
+            //}
 
 
+            //**Kalėdų sausainiai * *
+            //-Paprašykite vartotojo įvesti betkokias 4 datas(tarkim 2013 - 12 - 24, 2020 - 12 - 22, 3000 - 12 - 24, 2021 - 03 - 03)
+            //- Parašykite programą kuri nustato ar tarp įvestų datų yra kalėdos(gruodžio 24).
+            //- Ir jei yra kalėdų data, išveda -"Jums priklauso nemokami kalėdiniai sausainiai"
+            //- Jei nėra išveda -"Palaukite kalėdų"
+            //Pavyzdzio atsakymas: "Jums priklauso nemokami kalėdų sausainiai"
+            //< Hint > metodai data.Month ir data.Day
+
+            var metai1 = DateTime.Parse(Console.ReadLine());
+            var metai2 = DateTime.Parse(Console.ReadLine());
+            var metai3 = DateTime.Parse(Console.ReadLine());
+            var metai4 = DateTime.Parse(Console.ReadLine());
+            Console.WriteLine($"Ivesta {metai1.ToShortDateString()}, {metai2.ToShortDateString()}, {metai3}, {metai4}");
+            if (metai1.Month ==12 && metai1.Day == 24)
+            {
+                Console.WriteLine("Jums priklauso nemokami sausainiai");
+            }
+            else if (metai2.Month == 12 && metai2.Day == 24)
+            {
+                Console.WriteLine("jums priklauso nemokami saldainiai");
+            }
+            else if (metai3.Month == 12 && metai3.Day == 24)
+            {
+                Console.WriteLine("jums priklauso nemokami saldainiai");
+            }
+            else if (metai4.Month == 12 && metai4.Day == 24)
+            {
+                Console.WriteLine("jums priklauso nemokami saldainiai");
+            }
+            else
+            {
+                Console.WriteLine("palaukite kaledu");
+            }
         }
     }
 }
