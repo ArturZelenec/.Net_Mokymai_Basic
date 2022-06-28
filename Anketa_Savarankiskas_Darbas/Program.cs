@@ -31,20 +31,25 @@
             {
                 metai = "20" + metai;
             }
-            string datosSuklijavimas = $"{metai}-{menuo}-{diena}";
-            DateTime gimimoDatosFormatas = Convert.ToDateTime(datosSuklijavimas);
+            string datosFormatas = $"{metai}-{menuo}-{diena}";
+            DateTime gimimoDatosFormatas = Convert.ToDateTime(datosFormatas);
 
             DateTime dabarData = DateTime.Now;
             
-            int amziusIsStringo = dabarData.Year - gimimoDatosFormatas.Year;
-
+            int kodoAmzius = dabarData.Year - gimimoDatosFormatas.Year;
 
             //patikimumas
             string patikimumas = "";
+
+            if (gimimoData != "")
+            {
+                dabarData = Convert.ToDateTime(gimimoData);
+            }
+
             if (gimimoData == "" && amzius == "")
             {
                 
-                patikimumas = "Patikimumui truksta duomenu";
+                patikimumas = "Patikimumui trūksta duomenų";
                 
             }
             else
@@ -55,39 +60,39 @@
                     {
                         if (dabarData != gimimoDatosFormatas)
                         {
-                            patikimumas = "Amzius pameluotas";
+                            patikimumas = "Amžius pameluotas";
                         }
                         else
                         {
-                            patikimumas = "Amzius patikimas";
+                            patikimumas = "Amžius patikimas";
                         }
                     }
 
                     if (amzius != "")
                     {
-                        if (Convert.ToInt32(amzius) != amziusIsStringo)
+                        if (Convert.ToInt32(amzius) != kodoAmzius)
                         {
-                            patikimumas = "Amzius pameluotas";
+                            patikimumas = "Amžius pameluotas";
                         }
                         else
                         {
-                            patikimumas = "Amzius patikimas";
+                            patikimumas = "Amžius patikimas";
                         }
                     }
                 }
                 else
                 {
-                    if (dabarData != gimimoDatosFormatas && Convert.ToInt32(amzius) != amziusIsStringo)
+                    if (dabarData != gimimoDatosFormatas && Convert.ToInt32(amzius) != kodoAmzius)
                     {
-                        patikimumas = "Amzius pameluotas";
+                        patikimumas = "Amžius pameluotas";
                     }
-                    else if (dabarData != gimimoDatosFormatas || Convert.ToInt32(amzius) != amziusIsStringo)
+                    else if (dabarData != gimimoDatosFormatas || Convert.ToInt32(amzius) != kodoAmzius)
                     {
-                        patikimumas = "Amzius nepatikimas";
+                        patikimumas = "Amžius nepatikimas";
                     }
                     else
                     {
-                        patikimumas = "Amzius tikras";
+                        patikimumas = "Amžius tikras";
                     }
                 }
                 Console.WriteLine("ATASKAITA APIE ASMENI");
@@ -117,8 +122,8 @@
                 
             }
             Console.WriteLine($"Asmens kodas {asmensKodas}");
-            Console.WriteLine($"Amzius {amziusIsStringo}");
-            Console.WriteLine($"Gimimo data {datosSuklijavimas}");
+            Console.WriteLine($"Amzius {kodoAmzius}");
+            Console.WriteLine($"Gimimo data {datosFormatas}");
             Console.WriteLine($"Amziaus patikimumas {patikimumas}");
         }
     }
