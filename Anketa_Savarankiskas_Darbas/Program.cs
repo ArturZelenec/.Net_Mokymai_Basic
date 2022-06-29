@@ -48,7 +48,7 @@
             }
             else
             {
-                if ((gimimoData != "" || amzius != "") && !(gimimoData != "" && amzius != ""))
+                if ((gimimoData != "" && amzius != "") && !(gimimoData != "" || amzius != ""))
                 {
                     if (gimimoData != "")
                     {
