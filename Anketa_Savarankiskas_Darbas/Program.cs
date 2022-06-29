@@ -12,6 +12,7 @@
             var amzius = Console.ReadLine();
             Console.WriteLine("Iveskite gimimo data (neprivaloma)");
             var gimimoData = Console.ReadLine();
+            Console.Clear();
 
             //amzius
             string metai = asmensKodas.Remove(0, 1).Remove(2);
@@ -87,35 +88,37 @@
                         patikimumas = "Amzius tikras";
                     }
                 }
-                Console.WriteLine("ATASKAITA APIE ASMENI");
-                Console.WriteLine(DateTime.Now.ToString("yyyy-MM-dd"));
-                Console.WriteLine($"Vardas Pavarde {vardasPavarde}");
+                Console.WriteLine("###############################################################");
+                Console.WriteLine("################### ATASKAITA APIE ASMENI #####################");
+                Console.WriteLine($"######################### {DateTime.Now.ToString("yyyy-MM-dd")} ##########################");
+                Console.WriteLine($"############ Vardas Pavarde ### {vardasPavarde} #################");
                 //lytis
                 if (asmensKodas.StartsWith("1"))
                 {
-                    Console.WriteLine($"Lytis {"vyras"}");
+                    Console.WriteLine($"############ Lytis ############ {"vyras"} #########################");
                 }
                 if (asmensKodas.StartsWith("2"))
                 {
-                    Console.WriteLine($"Lytis {"moteris"}");
+                    Console.WriteLine($"############ Lytis ############ {"moteris"} #########################"); 
                 }
                 if (asmensKodas.StartsWith("3"))
                 {
-                    Console.WriteLine($"Lytis {"vyras"}");
+                    Console.WriteLine($"############ Lytis ############ {"vyras"} #########################");
                 }
                 if (asmensKodas.StartsWith("4"))
                 {
-                    Console.WriteLine($"Lytis {"moteris"}");
+                    Console.WriteLine($"############ Lytis ############ {"moteris"} #########################"); 
                 }
                 if (asmensKodas.StartsWith("5"))
                 {
-                    Console.WriteLine($"Lytis {"vyras"}");
+                    Console.WriteLine($"############ Lytis ############ {"vyras"} #########################"); 
                 }
             }
-            Console.WriteLine($"Asmens kodas {asmensKodas}");
-            Console.WriteLine($"Amzius {amziusStr}");
-            Console.WriteLine($"Gimimo data {datosFormatas}");
-            Console.WriteLine($"Amziaus patikimumas {patikimumas}");
+            Console.WriteLine($"############ Asmens kodas ##### {asmensKodas} ###################");
+            Console.WriteLine($"############ Amzius ########### {amziusStr} ############################");
+            Console.WriteLine($"############ Gimimo data ###### {datosFormatas} ####################");
+            Console.WriteLine($"############ Amziaus patikimumas ##### {patikimumas} ##########");
+            Console.WriteLine("###############################################################");
         }
     }
 }
