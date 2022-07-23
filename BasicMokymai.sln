@@ -71,15 +71,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "List_Uzdavinai", "List_Uzda
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "List_test", "List_test\List_test.csproj", "{BA5567AB-9879-41A2-8144-011F27B64CB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skaiciatuvas", "Skaiciatuvas\Skaiciatuvas.csproj", "{A4455FE5-AB50-477D-B839-0260080A0FA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skaiciatuvas", "Skaiciatuvas\Skaiciatuvas.csproj", "{A4455FE5-AB50-477D-B839-0260080A0FA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEach_teorija", "ForEach_teorija\ForEach_teorija.csproj", "{C9E98F44-0528-4966-8807-566F1F00653E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEach_teorija", "ForEach_teorija\ForEach_teorija.csproj", "{C9E98F44-0528-4966-8807-566F1F00653E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEach_uzdaviniai", "ForEach_uzdaviniai\ForEach_uzdaviniai.csproj", "{00455BD1-8B2D-4FAA-8E60-5950E6562D62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEach_uzdaviniai", "ForEach_uzdaviniai\ForEach_uzdaviniai.csproj", "{00455BD1-8B2D-4FAA-8E60-5950E6562D62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEach_Test", "ForEach_Test\ForEach_Test.csproj", "{54328509-E2A3-4FB8-A5DF-4D2944352B17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEach_Test", "ForEach_Test\ForEach_Test.csproj", "{54328509-E2A3-4FB8-A5DF-4D2944352B17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dictionaries_teorija", "Dictionaries_teorija\Dictionaries_teorija.csproj", "{6453E8E7-C182-439D-BFCD-43D4E82542A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dictionaries_teorija", "Dictionaries_teorija\Dictionaries_teorija.csproj", "{6453E8E7-C182-439D-BFCD-43D4E82542A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Super_Skaiciatuvas", "Super_Skaiciatuvas\Super_Skaiciatuvas.csproj", "{7D27387B-6E69-4942-90FD-FA7BAAB15221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Super_Skaiciatuvas_Test", "Super_Skaiciatuvas_Test\Super_Skaiciatuvas_Test.csproj", "{0103AE29-F663-49EC-8689-916B958DE3D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -239,6 +243,14 @@ Global
 		{6453E8E7-C182-439D-BFCD-43D4E82542A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6453E8E7-C182-439D-BFCD-43D4E82542A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6453E8E7-C182-439D-BFCD-43D4E82542A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D27387B-6E69-4942-90FD-FA7BAAB15221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D27387B-6E69-4942-90FD-FA7BAAB15221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D27387B-6E69-4942-90FD-FA7BAAB15221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D27387B-6E69-4942-90FD-FA7BAAB15221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0103AE29-F663-49EC-8689-916B958DE3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0103AE29-F663-49EC-8689-916B958DE3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0103AE29-F663-49EC-8689-916B958DE3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0103AE29-F663-49EC-8689-916B958DE3D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -249,6 +261,7 @@ Global
 		{CEEA5F00-B804-4694-BD7A-9189CF14CF86} = {C0BA5E31-DEAE-4468-9DA1-66E48066220F}
 		{BA5567AB-9879-41A2-8144-011F27B64CB9} = {C0BA5E31-DEAE-4468-9DA1-66E48066220F}
 		{54328509-E2A3-4FB8-A5DF-4D2944352B17} = {C0BA5E31-DEAE-4468-9DA1-66E48066220F}
+		{0103AE29-F663-49EC-8689-916B958DE3D0} = {C0BA5E31-DEAE-4468-9DA1-66E48066220F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {15C80910-8C9E-4417-B771-0E81969B0D64}
