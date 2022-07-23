@@ -4,6 +4,24 @@ namespace Methods_Test
     public class Methods_Test
     {
         [TestMethod]
+        public void TaipArbaNe_Test1()
+        {
+            var fake = "as mokausi programuoti";
+            var expected = "Taip";
+            var actual = Method_Uzdavinai.Program.TaipArbaNe(fake);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void RaidziuKiekis_Test1()
+        {
+            var fake = "as mokausi programuoti";
+            var expected = 3;
+            var actual = Method_Uzdavinai.Program.RaidziuKiekis(fake);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void BetKoksTekstas_Test1()
         {
             var fake = "as mokausi programuoti";

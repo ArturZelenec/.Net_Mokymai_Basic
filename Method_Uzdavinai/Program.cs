@@ -134,12 +134,43 @@
             // > Iveskite teksta:
             //_ as mokausi programuoti
             //> 'a' raidžių kiekis yra: 3
+
+            //___________________________________________________________________
+
+            //Parašykite programą kurioje vienas metodas.
+            //- Naudotojo paprašome įvesti betkokį tekstą Main metode. 
+            //-Metodas grąžina žodžius Taip arba Ne ar tekste rado žodį 'mokausi'.N.B.grąžinama string, o ne bool.
+            //- Išvesti rezultatą Main metode.
+            // Pvz: 
+            //> Iveskite teksta:
+            //_ ' as labai mokausi programuoti     '
+            //> Ar yra mokausi: Taip
+
+            Console.WriteLine("iveskite teksta");
+            var a = TaipArbaNe(Console.ReadLine());
+            Console.WriteLine(a);
+        }
+
+        public static string TaipArbaNe(string text)//, string ieskomasTekstas)
+        {
+            //ieskomasTekstas = "mokausi";
+            //if (text.Contains(ieskomasTekstas))
+            //{
+            //    Console.WriteLine($"ar yra {ieskomasTekstas} : yra");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"ar yra {ieskomasTekstas} : nera");
+            //}
+            return text.Contains("mokausi", StringComparison.OrdinalIgnoreCase) ? "Taip" : "Ne";
+
         }
 
 
         public static int RaidziuKiekis(string text)
         {
             
+            return text.Length - text.Replace("a", "").Length;
 
         }
 
