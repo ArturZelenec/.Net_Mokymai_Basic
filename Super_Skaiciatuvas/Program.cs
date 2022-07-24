@@ -3,23 +3,32 @@
     public class Program
     {
         static double? rezultatas = null;
-        static string ivedimas = "";
-        static string ivedimas2 = "";
+        static string ivedimas = String.Empty;
+        static string ivedimas2 = String.Empty;
+        public static double? sk1;
+        public static double? sk2;
         static bool kartoti = true;
+        public static List<string> simuliuotiVeiksmai = new List<string>();
+        
 
         static void Main(string[] args)
         {
-            SuperSkaiciuotuvas();
+            Calculaitor();
         }
+        public static void SuperSkaiciuotuvas(string ivedimas)
+        {
+            simuliuotiVeiksmai.Add(ivedimas);
+        }
+        
 
-        public static void SuperSkaiciuotuvas()
+        public static void Calculaitor()
         {
             
             while (kartoti)
             {
                 Console.WriteLine("[1] - Nauja operacija. [2] - Testi su rezultatu. [3] - Išeiti iš programos.");
 
-                int veiksmas = Convert.ToInt32(Console.ReadLine());
+                int veiksmas = Convert.ToInt32(Ivedimas());
 
                 switch (veiksmas)
                 {
@@ -29,14 +38,14 @@
                         {
                             //jeigu kvadratines saknies traukimas tai tik vienas skaicius reikalingas
                             Console.WriteLine("Įveskite 1 skaičiu:");
-                            ivedimas = Ivedimas();
+                            ivedimas = Ivedimas(); 
                             rezultatas = Skaiciuotuvas(DoubleSkaiciausTikrinimas(ivedimas), 0, veiksmas);
                         }
                         else
                         {
                             Console.WriteLine("Įveskite du skaičius:");
                             ivedimas = Ivedimas();
-                            ivedimas2 = Ivedimas();
+                            ivedimas2 =Ivedimas(); 
                             rezultatas = Skaiciuotuvas(DoubleSkaiciausTikrinimas(ivedimas), DoubleSkaiciausTikrinimas(ivedimas2), veiksmas);
                         }
                         break;
@@ -49,6 +58,7 @@
                             Console.WriteLine("Įveskite skaičiu:");
                             ivedimas2 = Ivedimas();
                         }
+                        
                         rezultatas = Skaiciuotuvas((double)rezultatas, DoubleSkaiciausTikrinimas(ivedimas2), veiksmas);
                         break;
                     case 3:
@@ -68,14 +78,14 @@
 
         public static int Operacija()
         {
-            Console.WriteLine(@" 1. Sudetis
-    2. Atimtis
- 3. Daugyba
- 4. Dalyba
- 5. Laipsnio pakelimas
- 6. Kvadratines šaknies traukimas");
+            Console.WriteLine(@"1. Sudetis
+                2. Atimtis
+                3. Daugyba
+                4. Dalyba
+                5. Laipsnio pakelimas
+               6. Kvadratines šaknies traukimas");
 
-            return Convert.ToInt32(Console.ReadLine());
+            return Convert.ToInt32(Ivedimas());
         }
 
         public static double Sudetis(double sk1, double sk2)
@@ -97,7 +107,7 @@
 
         public static double? Skaiciuotuvas(double sk1, double sk2, int veiksmas)
         {
-            double? rezultatas = null;
+            //double? rezultatas = null;
 
             switch (veiksmas)
             {
@@ -124,8 +134,9 @@
         }
         public static string Ivedimas()
         {
-            string ivedimas = Console.ReadLine();
-            return ivedimas;
+            if (simuliuotiVeiksmai.Count <= 0) { return Console.ReadLine(); }
+            
+            return "-1";
         }
 
         private static double DoubleSkaiciausTikrinimas(string? tekstas) => double.TryParse(tekstas, out double skaicius) ? skaicius : 0;
