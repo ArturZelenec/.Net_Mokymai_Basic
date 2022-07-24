@@ -24,10 +24,10 @@
                 return;
             }
 
-            Calculaitor();
+            MeniuChoise();
         }
 
-        private static void Calculaitor()
+        private static void MeniuChoise()
         {
             do
             {
@@ -52,7 +52,7 @@
                             input = GetInput();
                             input2 = GetInput();
                             result = Calculaitor(DoubleCheking(input),
-                                DoubleCheking(input2), veiksmas);
+                            DoubleCheking(input2), veiksmas);
                         }
 
                         break;
@@ -147,7 +147,7 @@
         {
             if (moves.Any())
             {
-                Calculaitor();
+                MeniuChoise();
                 moves.Clear();
             }
 
