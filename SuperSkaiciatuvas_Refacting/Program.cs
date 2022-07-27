@@ -140,7 +140,7 @@
             }
             return rezultatas;
         }
-
+        
         private static double DoubleCheking(string? tekstas) => double.TryParse(tekstas, out double skaicius) ? skaicius : 0;
 
         public static double Rezultatas()

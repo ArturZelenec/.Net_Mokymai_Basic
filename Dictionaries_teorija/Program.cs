@@ -5,8 +5,8 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            //DictionaryPavyzdziai();
-            AtspausdintiZodyna();
+            DictionaryPavyzdziai();
+            //AtspausdintiZodyna();
                  
 
         }
@@ -48,78 +48,78 @@
             miestai.Add("Palanga", 7);
             miestai["Klaipeda"] = 6;
 
-            foreach (var miestas in miestai)
-            {
-                Console.WriteLine(miestas);
-            }
+            //foreach (var miestas in miestai)
+            //{
+            //    Console.WriteLine(miestas);
+            //}
 
-            foreach (var miestas in miestai)
-            {
-                Console.WriteLine(miestas.Key);
-            }
+            //foreach (var miestas in miestai)
+            //{
+            //    Console.WriteLine(miestas.Key);
+            //}
 
-            foreach (var miestas in miestai)
-            {
-                Console.WriteLine(miestas.Value);
-            }
-
-
-            //zodyno iraso validavimas
-            if (miestai.TryGetValue("Kaipeda", out int miestoSkaicius))
-            {
-                Console.WriteLine($"Klaipeda: {miestoSkaicius}");
-            }
-            else
-            {
-                Console.WriteLine("neradome iraso");
-            }
-
-            if (!miestai.ContainsKey("Klaipeda"))
-            {
-                Console.WriteLine("neradome iraso");
-
-            }
-            else
-            {
-                Console.WriteLine($"Klaipeda: {miestoSkaicius}");
-            }
-
-            //zodyno ValueColection
-            Dictionary<string, int>.ValueCollection miestuReiksmes = miestai.Values;
-            foreach (var item in miestuReiksmes)
-            {
-                Console.WriteLine($"Reiksme: {item}");
-
-            }
-
-            Dictionary<string, int>.KeyCollection miestuRaktai = miestai.Keys;
-            foreach (var item in miestuReiksmes)
-            {
-                Console.WriteLine($"Reiksme: {item}");
-
-            }
-
-            //zodyno irasu isemimas
-            varduZodynas.Remove(2);
+            //foreach (var miestas in miestai)
+            //{
+            //    Console.WriteLine(miestas.Value);
+            //}
 
 
+            ////zodyno iraso validavimas
+            //if (miestai.TryGetValue("Kaipeda", out int miestoSkaicius))
+            //{
+            //    Console.WriteLine($"Klaipeda: {miestoSkaicius}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("neradome iraso");
+            //}
 
-            Dictionary<string, List<int>> zaidejuTaskuZodynas = new Dictionary<string, List<int>>()
-            {
-                { "Ieva", new List<int>() { 9, 8, 10 } },
-                { "Audrius", new List<int>() { 8, 10, 8, 10, 10 } },
-                { "Veronika", new List<int>() { 10, 10, 10 } },
-            };
+            //if (!miestai.ContainsKey("Klaipeda"))
+            //{
+            //    Console.WriteLine("neradome iraso");
 
-            foreach (var zaidejas in zaidejuTaskuZodynas)
-            {
-                Console.Write(zaidejas.Key + " ");
-                foreach (var taskai in zaidejas.Value)
-                {
-                    Console.Write(taskai + " ");
-                }
-                Console.WriteLine();
-            }
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Klaipeda: {miestoSkaicius}");
+            //}
+
+            ////zodyno ValueColection
+            //Dictionary<string, int>.ValueCollection miestuReiksmes = miestai.Values;
+            //foreach (var item in miestuReiksmes)
+            //{
+            //    Console.WriteLine($"Reiksme: {item}");
+
+            //}
+
+            //Dictionary<string, int>.KeyCollection miestuRaktai = miestai.Keys;
+            //foreach (var item in miestuReiksmes)
+            //{
+            //    Console.WriteLine($"Reiksme: {item}");
+
+            //}
+
+            ////zodyno irasu isemimas
+            //varduZodynas.Remove(2);
+
+
+
+            //Dictionary<string, List<int>> zaidejuTaskuZodynas = new Dictionary<string, List<int>>()
+            //{
+            //    { "Ieva", new List<int>() { 9, 8, 10 } },
+            //    { "Audrius", new List<int>() { 8, 10, 8, 10, 10 } },
+            //    { "Veronika", new List<int>() { 10, 10, 10 } },
+            //};
+
+            //foreach (var zaidejas in zaidejuTaskuZodynas)
+            //{
+            //    Console.Write(zaidejas.Key + " ");
+            //    foreach (var taskai in zaidejas.Value)
+            //    {
+            //        Console.Write(taskai + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
 
