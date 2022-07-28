@@ -130,6 +130,25 @@ namespace Hangman
                 Console.WriteLine($"You lost! \n The word was {wGuess}");
             }
             Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
         //Visual Menu
         static void VisualMenu()
