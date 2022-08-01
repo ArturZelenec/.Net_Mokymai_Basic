@@ -12,7 +12,7 @@ namespace HangMan_Zaidimas
         public static int atskleistosRaides = 0;
         public static char spejimas;
         public static string input;
-        public static int spejimai = 7;
+        public static int spejimai = 6;
 
         static void Main(string[] args)
         {
@@ -32,7 +32,7 @@ namespace HangMan_Zaidimas
                         Valstybes();
                         break;
                     case "4":
-                        Kita(spejimai);
+                        Kita();
                         break;
                     default:
                         Console.WriteLine("Nera tokios kategorijos");
@@ -40,22 +40,16 @@ namespace HangMan_Zaidimas
                 }
             }
         }
-        private static void Kita(int spejimai)
+        private static void Kita()
         {
             string[] kita = { "Abrakadabra", "Filamas", "Programuotojas", "Alus", "Lapas", "Kompiuteris" };
-
-
             string randomZodis = RandomZodis(kita);
-            //string pasleptasZodis = PasleptasZodis(randomZodis);
-            //var suliginimas = pasleptasZodis.ToUpper();
-
             string suliginimas = randomZodis.ToUpper();
             StringBuilder pasleptasZodis = new StringBuilder(randomZodis.Length);
             for (int i = 0; i < randomZodis.Length; i++)
             {
                 pasleptasZodis.Append('-');
             }
-
             while (!win && spejimai > 0) // sukam while kol nelaimesim arba kol nebaigsis ejimai
             {
                 Console.Write("Iveskite raide:");
@@ -80,16 +74,9 @@ namespace HangMan_Zaidimas
                     {
                         if (suliginimas[i] == spejimas)
                         {
-                            //var zodis = pasleptasZodis;
-                            //var rezultatas = zodis.Substring(0, i - 1) + randomZodis[i] + zodis.Substring(i, zodis.Length);
                             pasleptasZodis[i] = randomZodis[i];  // darant metodus meta klaida "not null"
                             atskleistosRaides++;
                         }
-                        //if (suliginimas[i] == spejimas)
-                        //{
-                        //    pasleptasZodis = pasleptasZodis.Substring(0, i - 1) + randomZodis[i] + pasleptasZodis.Substring(i + 1, randomZodis.Length);
-                        //    atskleistosRaides++;
-                        //}
                     }
                     if (atskleistosRaides == randomZodis.Length)
                         win = true;
@@ -98,7 +85,10 @@ namespace HangMan_Zaidimas
                 {
                     neraRaidziuZodije.Add(spejimas);
                     Console.WriteLine($"\"{spejimas}\" nera sitame zodije");
+                    Console.Clear();
+                    Piesinys(spejimai);
                     spejimai--;
+                    
                     Console.WriteLine($"{spejimai} bandimu liko");
                 }
                 Console.WriteLine(pasleptasZodis.ToString());
@@ -137,7 +127,6 @@ namespace HangMan_Zaidimas
                 if (suliginimas.Contains(spejimas))  
                 {
                     atspetosRaides.Add(spejimas);
-
                     for (int i = 0; i < randomZodis.Length; i++)
                     {
                         if (suliginimas[i] == spejimas)
@@ -153,6 +142,8 @@ namespace HangMan_Zaidimas
                 {
                     neraRaidziuZodije.Add(spejimas);
                     Console.WriteLine($"\"{spejimas}\" nera sitame zodije");
+                    Console.Clear();
+                    Piesinys(spejimai);
                     spejimai--;
                     Console.WriteLine($"{spejimai} bandimu liko");
                 }
@@ -162,9 +153,7 @@ namespace HangMan_Zaidimas
             Console.ReadKey();
             Reset();
             Console.Clear();
-
         }
-
         private static void LietuvosMiestai()
         {
             string[] lietuvosMiestai = { "Vilnius", "Kaunas", "Taurage", "Klaipeda", "Telsiai", "Utena" };
@@ -180,6 +169,7 @@ namespace HangMan_Zaidimas
                 Console.Write("Iveskite raide:");
                 input = Console.ReadLine().ToUpper();
                 spejimas = input[0];
+
                 if (atspetosRaides.Contains(spejimas))
                 {
                     Console.WriteLine($"Atspejot \"{spejimas}\" anksciau");
@@ -193,7 +183,6 @@ namespace HangMan_Zaidimas
                 if (suliginimas.Contains(spejimas))
                 {
                     atspetosRaides.Add(spejimas);
-
                     for (int i = 0; i < randomZodis.Length; i++)
                     {
                         if (suliginimas[i] == spejimas)
@@ -209,6 +198,8 @@ namespace HangMan_Zaidimas
                 {
                     neraRaidziuZodije.Add(spejimas);
                     Console.WriteLine($"\"{spejimas}\" nera sitame zodije");
+                    Console.Clear();
+                    Piesinys(spejimai);
                     spejimai--;
                     Console.WriteLine($"{spejimai} bandimu liko");
                 }
@@ -219,7 +210,6 @@ namespace HangMan_Zaidimas
             Reset();
             Console.Clear();
         }
-
         private static void Vardai()
         {
             string[] vardai = { "Artur", "Romuald", "Juozas", "Dalia", "Diana", "Tadas" };
@@ -249,7 +239,6 @@ namespace HangMan_Zaidimas
                 if (suliginimas.Contains(spejimas))
                 {
                     atspetosRaides.Add(spejimas);
-
                     for (int i = 0; i < randomZodis.Length; i++)
                     {
                         if (suliginimas[i] == spejimas)
@@ -265,6 +254,8 @@ namespace HangMan_Zaidimas
                 {
                     neraRaidziuZodije.Add(spejimas);
                     Console.WriteLine($"\"{spejimas}\" nera sitame zodije");
+                    Console.Clear();
+                    Piesinys(spejimai);
                     spejimai--;
                     Console.WriteLine($"{spejimai} bandimu liko");
                 }
@@ -275,8 +266,69 @@ namespace HangMan_Zaidimas
             Reset();
             Console.Clear();
         }
+        public static void Piesinys(int input)
+        {
+            if (input == 7)
+            {
+                Console.WriteLine("__________");
+                Console.WriteLine("|        |");
+                Console.WriteLine("|        ");
+                Console.WriteLine(@"|       ");
+                Console.WriteLine(@"|      ");
 
-        static void Menu()
+                
+            }
+            if (input == 6)
+            {
+                Console.WriteLine("__________");
+                Console.WriteLine("|        |");
+                Console.WriteLine("|        0");
+                Console.WriteLine(@"|       ");
+                Console.WriteLine(@"|       ");
+            }
+            if (input == 5)
+            {
+                Console.WriteLine("__________");
+                Console.WriteLine("|        |");
+                Console.WriteLine("|        0");
+                Console.WriteLine(@"|       /");
+                Console.WriteLine(@"|       ");
+            }
+            if (input == 4)
+            {
+                Console.WriteLine("__________");
+                Console.WriteLine("|        |");
+                Console.WriteLine("|        0");
+                Console.WriteLine(@"|       /|");
+                Console.WriteLine(@"|       ");
+            }
+            if (input == 3)
+            {
+                Console.WriteLine("__________");
+                Console.WriteLine("|        |");
+                Console.WriteLine("|        0");
+                Console.WriteLine(@"|       /|\");
+                Console.WriteLine(@"|       ");
+            }
+            if (input == 2)
+            {
+                Console.WriteLine("__________");
+                Console.WriteLine("|        |");
+                Console.WriteLine("|        0");
+                Console.WriteLine(@"|       /|\");
+                Console.WriteLine(@"|       / ");
+            }
+            if (input == 1)
+            {
+                Console.WriteLine("__________");
+                Console.WriteLine("|        |");
+                Console.WriteLine("|        0");
+                Console.WriteLine(@"|       /|\");
+                Console.WriteLine(@"|       / \");
+            }
+            
+        }
+        public static void Menu()
         {
             Console.WriteLine("Pasirinkite tema:"
                             + "\n-----------------------------------"
@@ -314,7 +366,6 @@ namespace HangMan_Zaidimas
             }
             return zodis.ToString();
         }
-
         public static void Reset()
         {
             atskleistosRaides = 0;
