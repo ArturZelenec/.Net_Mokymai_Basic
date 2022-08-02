@@ -2,9 +2,7 @@
 
 namespace HangMan_Zaidimas
 {
-
-
-    internal class Program
+    public class Program
     {
         public static List<char> atspetosRaides = new List<char>();
         public static List<char> neraRaidziuZodije = new List<char>();
@@ -35,6 +33,7 @@ namespace HangMan_Zaidimas
                         Kita();
                         break;
                     default:
+                        Console.Clear();
                         Console.WriteLine("Nera tokios kategorijos");
                         break;
                 }
@@ -349,7 +348,7 @@ namespace HangMan_Zaidimas
             if (veiksmas)
             {
                 Console.WriteLine($"Jus atspejot!");
-
+                
             }
             else
             {
@@ -357,15 +356,15 @@ namespace HangMan_Zaidimas
             }
 
         }
-        public static string PasleptasZodis(string zodis)
-        {
-            StringBuilder pasleptasZodis = new StringBuilder(zodis.Length);
-            for (int i = 0; i < zodis.Length; i++)
-            {
-                pasleptasZodis.Append('-');
-            }
-            return zodis.ToString();
-        }
+        //public static string PasleptasZodis(string zodis)
+        //{
+        //    StringBuilder pasleptasZodis = new StringBuilder(zodis.Length);
+        //    for (int i = 0; i < zodis.Length; i++)
+        //    {
+        //        pasleptasZodis.Append('-');
+        //    }
+        //    return pasleptasZodis .ToString();
+        //}
         public static void Reset()
         {
             atskleistosRaides = 0;
